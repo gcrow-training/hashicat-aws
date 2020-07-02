@@ -8,7 +8,8 @@ data "aws_security_group" "default" {
 }
 
 module "vpc" {
-  source = "../../"
+  source = "app.terraform.io/gcrow-training/aws/vpc"
+  version = "2.44.0"
 
   name = "simple-example"
 
